@@ -16,7 +16,7 @@ st.title("Claude Requests")
 client = Anthropic()
 st.markdown("Use this app to send a prompt to Claude and view the response.")
 
-model = st.selectbox("Model", ["claude-sonnet-4-0", "claude-2.1"], index=0)
+model = st.selectbox("Model", ["claude-sonnet-4-0"], index=0)
 prompt = st.text_area("Prompt", value="What is cloud computing? Answer in a sentence.")
 max_tokens = st.slider("Max tokens", 10, 2000, 100)
 

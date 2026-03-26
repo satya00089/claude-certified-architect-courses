@@ -44,7 +44,7 @@ ipython_config.py
 
 # dotenv
 .env
-.env.*
+# .env.*
 
 # mypy
 .mypy_cache/
