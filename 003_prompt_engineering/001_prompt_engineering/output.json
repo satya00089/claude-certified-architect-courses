@@ -1,0 +1,23 @@
+[
+  {
+    "output": "# One-Day Meal Plan for Marathon Preparation\n\nHere is a one-day meal plan for an athlete preparing for a marathon race while maintaining a vegetarian, nut-free diet:\n\n* **Calorie Target:** Approximately 3,200 calories\n* **Macronutrient Breakdown:** Protein (130g), Fat (85g), Carbs (420g)\n\n## Meal Plan:\n\n* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with banana (150g), sunflower seeds (25g), and whole milk (240ml).\n    * Protein: 18g, Fat: 12g, Carbs: 85g\n\n* **Mid-Morning Snack (10:00 AM):** Greek yogurt (200g, plain) with granola (40g) and blueberries (80g).\n    * Protein: 20g, Fat: 8g, Carbs: 55g\n\n* **Lunch (1:00 PM):** Lentil and vegetable soup (400ml), whole wheat bread (80g), hummus (30g), and a side salad with mixed greens (150g), chickpeas (80g), cucumber (60g), and olive oil dressing (15ml).\n    * Protein: 28g, Fat: 15g, Carbs: 95g\n\n* **Afternoon Snack (4:00 PM):** Rice cakes (50g) with peanut butter alternative (tahini, 25g) and honey (15g). Orange (180g).\n    * Protein: 12g, Fat: 10g, Carbs: 65g\n\n* **Dinner (7:00 PM):** Baked tofu (180g) with sweet potato (200g), steamed spinach (200g), and quinoa (80g dry weight) drizzled with olive oil (10ml).\n    * Protein: 32g, Fat: 18g, Carbs: 95g\n\n* **Evening Snack (9:00 PM):** Whole grain toast (40g) with almond butter alternative (sunflower seed butter, 20g) and a glass of low-fat milk (240ml).\n    * Protein: 20g, Fat: 12g, Carbs: 25g\n\nThis meal plan emphasizes complex carbohydrates for sustained energy during marathon training, plant-based proteins for muscle recovery, and balanced micronutrients to support endurance performance while remaining vegetarian and nut-free.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "182 cm",
+        "weight": "72 kg",
+        "goal": "Prepare for marathon race in 2 weeks with optimized energy and recovery",
+        "restrictions": "Vegetarian, no nuts"
+      },
+      "solution_criteria": [
+        "Meal plan covers all 3 meals plus pre/post-training snacks with appropriate timing",
+        "Macronutrient distribution supports endurance training (55-60% carbs, 15-20% protein, 20-25% fat)",
+        "All meals are easily digestible and account for training schedule",
+        "Respects dietary restrictions (vegetarian, nut-free) throughout all meals"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a professional endurance athlete (marathon runner) with high caloric needs and specific macronutrient ratios, requiring meals that balance energy density with digestibility before/after training"
+    },
+    "score": 8,
+    "reasoning": "The solution successfully meets all mandatory requirements with a well-structured, detailed meal plan that respects dietary restrictions and provides appropriate macronutrient distribution for endurance athletes. The six meals with exact portions and timing demonstrate thoroughness. However, the plan lacks explicit connection to a training schedule and doesn't address the specific context of marathon preparation 2 weeks before race day, which would typically involve different nutritional strategies than general training. The caloric target is reasonable but unexplained. These are secondary criterion gaps rather than mandatory failures."
+  }
+]
