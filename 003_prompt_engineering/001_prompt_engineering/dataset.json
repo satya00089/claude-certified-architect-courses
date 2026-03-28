@@ -1,0 +1,18 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "182 cm",
+      "weight": "72 kg",
+      "goal": "Prepare for marathon race in 2 weeks with optimized energy and recovery",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan covers all 3 meals plus pre/post-training snacks with appropriate timing",
+      "Macronutrient distribution supports endurance training (55-60% carbs, 15-20% protein, 20-25% fat)",
+      "All meals are easily digestible and account for training schedule",
+      "Respects dietary restrictions (vegetarian, nut-free) throughout all meals"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a professional endurance athlete (marathon runner) with high caloric needs and specific macronutrient ratios, requiring meals that balance energy density with digestibility before/after training"
+  }
+]
