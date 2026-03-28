@@ -1,4 +1,6 @@
+streamlit
 anthropic
+python-dotenvanthropic
 streamlit
 python-dotenv
 jupyter
