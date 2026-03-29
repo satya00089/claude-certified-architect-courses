@@ -1,0 +1,215 @@
+
+================================================================================
+                    STREAMING SERVICE CHURN ANALYSIS
+                          EXECUTIVE SUMMARY REPORT
+================================================================================
+
+DATASET OVERVIEW:
+--------------------------------------------------------------------------------
+Total Customers Analyzed:     500
+Churned Customers:            193 (38.6%)
+Retained Customers:           307 (61.4%)
+
+This represents a concerning churn rate that requires immediate attention.
+
+
+MAJOR CHURN DRIVERS IDENTIFIED:
+================================================================================
+
+1. CUSTOMER SERVICE INTERACTIONS (Strongest Positive Driver)
+   Effect Size (Cohen's d): +0.596 (Medium-to-Large Effect)
+   Statistical Significance: p < 0.001 (Highly Significant)
+   
+   Findings:
+   • Churned customers: 3.18 interactions on average
+   • Retained customers: 2.49 interactions on average
+   • Difference: +69% more interactions for churned customers
+   
+   IMPLICATION: Customers who contact support more frequently are significantly
+   more likely to churn. This suggests unresolved issues or persistent problems
+   with the service.
+   
+   RECOMMENDATION: Improve first-contact resolution rates, proactively address
+   recurring issues, and implement customer satisfaction surveys after support
+   interactions.
+
+
+2. TOTAL VIEWING HOURS (Strongest Negative Driver)
+   Effect Size (Cohen's d): -0.521 (Medium Effect)
+   Statistical Significance: p < 0.001 (Highly Significant)
+   Feature Importance Rank: #1 (23.8% importance)
+   
+   Findings:
+   • Churned customers: 66.6 hours/month average
+   • Retained customers: 83.2 hours/month average  
+   • Difference: -16.6 hours (20% less engagement)
+   
+   IMPLICATION: Low engagement is a critical churn predictor. Customers watching
+   less content are deriving less value from the service.
+   
+   RECOMMENDATION: Implement engagement campaigns targeting users who fall below
+   70 hours/month. Consider personalized content recommendations and email
+   campaigns to re-engage low-activity users.
+
+
+3. BINGE WATCHING SESSIONS (Strong Engagement Indicator)
+   Effect Size (Cohen's d): -0.500 (Medium Effect)
+   Statistical Significance: p < 0.001 (Highly Significant)
+   Feature Importance Rank: #5 (11.2% importance)
+   
+   Findings:
+   • Churned customers: 6.2 sessions/month average
+   • Retained customers: 7.7 sessions/month average
+   • Difference: -1.5 sessions (20% fewer)
+   
+   IMPLICATION: Binge-watching behavior indicates high content satisfaction and
+   platform stickiness. Lower binge-watching correlates with higher churn.
+   
+   RECOMMENDATION: Promote binge-worthy content (complete series, related content
+   queues). Use auto-play features and "continue watching" prompts strategically.
+
+
+4. UNIQUE TITLES WATCHED (Content Variety)
+   Effect Size (Cohen's d): -0.471 (Medium Effect)
+   Statistical Significance: p < 0.001 (Highly Significant)
+   Feature Importance Rank: #3 (15.9% importance)
+   
+   Findings:
+   • Churned customers: 19.5 unique titles/month
+   • Retained customers: 23.7 unique titles/month
+   • Difference: -4.3 titles (18% less variety)
+   
+   IMPLICATION: Customers exploring less content diversity are more likely to
+   churn, possibly due to perceived limited content library or poor discovery.
+   
+   RECOMMENDATION: Improve content discovery algorithms, create curated playlists,
+   and implement "if you liked X, try Y" recommendations to increase exploration.
+
+
+5. AVERAGE SESSION DURATION (Quality of Engagement)
+   Effect Size (Cohen's d): -0.458 (Medium Effect)
+   Statistical Significance: p < 0.001 (Highly Significant)
+   Feature Importance Rank: #2 (21.6% importance)
+   
+   Findings:
+   • Churned customers: 49.4 minutes average
+   • Retained customers: 57.8 minutes average
+   • Difference: -8.3 minutes (14% shorter)
+   
+   IMPLICATION: Shorter sessions may indicate reduced satisfaction, inability to
+   find compelling content, or technical issues interrupting viewing.
+   
+   RECOMMENDATION: Analyze technical performance metrics (buffering, errors),
+   improve content onboarding, and ensure high-quality streaming experiences.
+
+
+6. SUBSCRIPTION TIER (Pricing & Value Perception)
+   Statistical Significance: p < 0.01 (Significant)
+   Feature Importance Rank: #8 (3.5% importance)
+   
+   Findings by Tier:
+   • Basic ($7.99):     43.5% churn rate (90 of 207 customers)
+   • Standard ($12.99): 39.5% churn rate (83 of 210 customers)
+   • Premium ($17.99):  24.1% churn rate (20 of 83 customers)
+   
+   IMPLICATION: Premium subscribers show nearly 50% lower churn than Basic tier
+   customers. This suggests higher-paying customers perceive more value, or that
+   Basic tier features are insufficient.
+   
+   RECOMMENDATION: Either improve Basic tier value proposition or create upgrade
+   incentives. Consider whether Premium features (likely including HD, multiple
+   streams) create enough differentiation to justify retention investment.
+
+
+7. GENRE PREFERENCES (Content Fit)
+   Statistical Significance: p = 0.119 (Not Statistically Significant)
+   Feature Importance Rank: #4 (11.4% importance)
+   
+   Findings by Genre (Churn Rate):
+   • Horror:       52.3% churn (23 of 44 customers)
+   • Thriller:     48.3% churn (14 of 29 customers)
+   • Action:       44.6% churn (33 of 74 customers)
+   • Romance:      41.8% churn (23 of 55 customers)
+   • SciFi:        40.5% churn (17 of 42 customers)
+   • Drama:        35.3% churn (36 of 102 customers)
+   • Comedy:       33.0% churn (33 of 100 customers)
+   • Documentary:  25.9% churn (14 of 54 customers)
+   
+   IMPLICATION: While not statistically significant overall, Horror and Thriller
+   fans show notably higher churn. This may indicate insufficient content depth
+   in these genres or that these customers are more likely to churn regardless.
+   
+   RECOMMENDATION: Analyze content library depth by genre. Consider whether
+   niche genres need more investment or if customers can be encouraged to
+   explore multiple genres.
+
+
+ACTIONABLE INSIGHTS SUMMARY:
+================================================================================
+
+IMMEDIATE ACTIONS (High Impact, Quick Wins):
+--------------------------------------------
+1. Flag customers with 3+ service interactions in the past year for proactive
+   outreach and issue resolution.
+
+2. Identify customers with <70 viewing hours/month and send personalized
+   content recommendation emails.
+
+3. Create "binge-worthy" content collections and promote them to at-risk users.
+
+4. Analyze and fix technical issues causing session interruptions.
+
+
+MEDIUM-TERM STRATEGIES (1-3 Months):
+------------------------------------
+1. Develop a customer health score incorporating:
+   - Viewing hours (weight: 24%)
+   - Session duration (weight: 22%)
+   - Unique titles watched (weight: 16%)
+   - Binge sessions (weight: 11%)
+   - Service interactions (weight: 9%)
+
+2. Implement automated engagement campaigns for customers scoring below
+   threshold levels.
+
+3. Improve content discovery and recommendation algorithms to increase
+   title variety and session engagement.
+
+4. Review and enhance Basic tier features or create targeted upgrade campaigns.
+
+
+LONG-TERM INITIATIVES (3-6 Months):
+-----------------------------------
+1. Expand content library in underserved genres (Horror, Thriller) or 
+   de-prioritize targeting these customer segments.
+
+2. Build predictive churn model using identified drivers to enable
+   early intervention (30-60 days before expected churn).
+
+3. Create premium retention programs for high-value customers.
+
+4. Implement A/B testing for engagement features (auto-play, notifications,
+   personalized homepages) to optimize retention.
+
+
+MONITORING METRICS:
+-------------------
+Track these KPIs monthly to measure retention efforts:
+
+• Churn rate by cohort and tier
+• Average viewing hours per active user
+• Customer service interaction rate
+• Average session duration
+• Binge-watching session frequency
+• Content catalog utilization rate
+• Customer health score distribution
+
+
+================================================================================
+                              END OF REPORT
+================================================================================
+
+Report Generated: Churn Analysis Complete
+Total Customers: 500 | Churn Rate: 38.6%
+Statistical Methods: T-tests, Chi-square tests, Random Forest feature importance
+Effect Sizes: Cohen's d for continuous variables

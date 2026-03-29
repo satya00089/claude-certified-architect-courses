@@ -1,0 +1,8 @@
+streamlit
+anthropic
+python-dotenv
+streamlit
+anthropic
+python-dotenv
+jupyter
+voyageai
