@@ -92,10 +92,8 @@ The id of the document you need to reformat is:
 Add in headers, bullet points, tables, etc as necessary. Feel free to add in extra formatting.
 Use the 'edit_document' tool to edit the document. After the document has been reformatted...
 """
-    
-    return [
-        base.UserMessage(prompt)
-    ]
+
+    return [base.UserMessage(prompt)]
 
 
 @mcp.prompt(
@@ -116,9 +114,7 @@ The id of the document you need to summarize is:
 Use the 'read_doc_contents' tool to read the document, then provide a clear and concise summary
 covering the key points, findings, and any important details.
 """
-    return [
-        base.UserMessage(prompt)
-    ]
+    return [base.UserMessage(prompt)]
 
 
 if __name__ == "__main__":
