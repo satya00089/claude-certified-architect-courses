@@ -39,7 +39,7 @@ def read_doc(doc_id: str = Field(description="The ID of the document to read")) 
 def edit_doc(
     doc_id: str = Field(description="The ID of the document to edit"),
     old_text: str = Field(
-        description="The text to be replace. Must match exactly, including whitespace and punctuation."
+        description="The text to be replaced. Must match exactly, including whitespace and punctuation."
     ),
     new_text: str = Field(
         description="The new text to insert in place of the old text. Must match exactly, including whitespace and punctuation."
